@@ -12,13 +12,14 @@ import { WishlistComponent } from './components/header-components/wishlist/wishl
 import { LogoutComponent } from './components/header-components/logout/logout.component';
 import { CartPageComponent } from './components/pages/cart-page/cart-page.component';
 import { SingleProductComponent } from './components/single-product/single-product.component';
+import { ProductDetailsComponent } from './components/pages/product-details/product-details.component';
 
 @NgModule({
   declarations: [AppComponent,
     FooterComponent, 
     HomeComponent, 
     ProductsComponent, 
-    HeaderComponent, CartComponent, WishlistComponent, LogoutComponent, CartPageComponent, SingleProductComponent
+    HeaderComponent, CartComponent, WishlistComponent, LogoutComponent, CartPageComponent, SingleProductComponent, ProductDetailsComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

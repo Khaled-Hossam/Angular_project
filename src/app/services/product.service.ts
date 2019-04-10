@@ -39,7 +39,7 @@ private products: Product[] = [
     },
     {
         "ProductId": "HT-1010",
-        "Category": "Accessories",
+        "Category": "Laptops",
         "Description": "Notebook Professional 15 with 2,80 GHz quad core, 15\" Multitouch LCD, 8 GB DDR3 RAM, 500 GB SSD - DVD-Writer (DVD-R/+R/-RW/-RAM),Windows 8 Pro",
         "Name": "Notebook Professional 15",
         "Price": 1999,
