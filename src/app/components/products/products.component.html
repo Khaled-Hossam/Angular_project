@@ -1,0 +1,14 @@
+<div class="row" >
+  <div *ngFor="let product of products"
+  class="card mx-auto mt-3 mb-3" style="width: 21rem;">
+    <a href="#">
+      <img
+        src="{{product.ProductPicUrl}}" width="200"
+        height="250" class="card-img-top">
+    </a>
+    <div class="card-body">
+      <h5 class="card-title" style="height:40px">{{product.Name}}</h5>
+      <p style="color: red;">${{product.Price}}</p><button class="btn btn-info" id="0">Add to cart</button>
+    </div>
+  </div>
+</div>
