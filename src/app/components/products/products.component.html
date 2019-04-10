@@ -8,7 +8,8 @@
     </a>
     <div class="card-body">
       <h5 class="card-title" style="height:40px">{{product.Name}}</h5>
-      <p style="color: red;">${{product.Price}}</p><button class="btn btn-info" id="0">Add to cart</button>
+      <p style="color: red;">${{product.Price}}</p>
+      <button class="btn btn-info" [routerLink]="['/cart', { id:product.ProductId }]">Add to cart</button>
     </div>
   </div>
 </div>

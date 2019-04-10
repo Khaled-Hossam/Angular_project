@@ -1,0 +1,43 @@
+<app-header></app-header>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>product</th>
+      <th class="text-center">Quantity</th>
+      <th class="text-right">Price</th>
+      <th class="text-right">Total Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of items">
+      <th>
+        <img
+          src="{{item.product.ProductPicUrl}}"
+          width="100"
+          height="50"
+        />
+      </th>
+      <td>{{item.product.Name}}</td>
+      <td class="text-center">{{item.quantity}}</td>
+      <td class="text-right">{{item.product.Price}}</td>
+      <td class="text-right">{{item.product.Price * item.quantity}}</td>
+      <td class="text-right">
+        <button (click)="remove(item.product.ProductId)" class="btn btn-sm btn-danger">
+          <i class="fa fa-trash"></i>
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><strong>Total</strong></td>
+      <td class="text-right"><strong>{{total}}</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+

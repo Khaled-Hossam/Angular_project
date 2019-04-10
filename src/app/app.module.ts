@@ -7,13 +7,18 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { ProductsComponent } from './components/products/products.component';
 import { HeaderComponent } from './components/header/header.component';
+import { CartComponent } from './components/header-components/cart/cart.component';
+import { WishlistComponent } from './components/header-components/wishlist/wishlist.component';
+import { LogoutComponent } from './components/header-components/logout/logout.component';
+import { CartPageComponent } from './components/pages/cart-page/cart-page.component';
+import { SingleProductComponent } from './components/single-product/single-product.component';
 
 @NgModule({
   declarations: [AppComponent,
     FooterComponent, 
     HomeComponent, 
     ProductsComponent, 
-    HeaderComponent
+    HeaderComponent, CartComponent, WishlistComponent, LogoutComponent, CartPageComponent, SingleProductComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

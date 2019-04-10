@@ -1,0 +1,23 @@
+<div class="dropdown mr-3">
+    <a href="#" class="dropdown-toggle text-white" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fas fa-shopping-cart"></span> {{cartCount}} - Items<span class="caret"></span></a>
+    <ul class="dropdown-menu dropdown-cart" role="menu">
+        <li *ngFor="let item of items">
+        <span class="item">
+            <span class="item-left">
+                <img src="{{item.product.ProductPicUrl}}" width="50" height="50" alt="" />
+                <span class="item-info">
+                    <span>{{item.product.Name}}</span>
+                    <span>{{item.product.Price}}$</span>
+                </span>
+            </span>
+            <span class="item-right">
+                <button (click)="remove(item.product.ProductId)" class="btn btn-xs btn-danger pull-right">x</button>
+            </span>
+        </span>
+        </li>
+
+        <li class="divider"></li>
+        <li><a class="d-block text-center" [routerLink]="['/cart']">View Cart</a></li>
+    </ul>
+</div>

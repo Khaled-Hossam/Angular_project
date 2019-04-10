@@ -1,0 +1,14 @@
+<div style="width: 21rem;">
+    <a href="#">
+    <img
+        src="{{product.ProductPicUrl}}" width="200"
+        height="250" class="card-img-top">
+    </a>
+    <div class="card-body">
+    <h5 class="card-title" style="height:40px">{{product.Name}}</h5>
+    <p style="color: red;">${{product.Price}}</p>
+    <button class="btn btn-info" (click)="addToCart(product.ProductId)" >
+        <i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+    <!-- [routerLink]="['/cart', { id:product.ProductId }]" -->
+    </div>
+</div>
