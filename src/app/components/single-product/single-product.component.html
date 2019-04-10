@@ -9,6 +9,8 @@
     <p style="color: red;">${{product.Price}}</p>
     <button class="btn btn-info" (click)="addToCart(product.ProductId)" >
         <i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
-    <!-- [routerLink]="['/cart', { id:product.ProductId }]" -->
+
+    <button class="btn btn-warning ml-3" (click)="addToWishlist(product.ProductId)" >
+        <i class="fa fa-heart" aria-hidden="true"></i> Add to wishlist</button>
     </div>
 </div>
