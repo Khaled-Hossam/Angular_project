@@ -95,3 +95,7 @@ color: $colDefault;
 .dropdown-item.active {
 color: $colHighlight;
 background-color: $bgHighlight; }}
+
+.nav-item{
+    cursor: pointer;
+}

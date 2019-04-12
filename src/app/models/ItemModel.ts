@@ -1,6 +1,6 @@
 import { Product } from './ProductModel';
 
-export class Item {
+export interface Item {
 
     product: Product;
     quantity: number;

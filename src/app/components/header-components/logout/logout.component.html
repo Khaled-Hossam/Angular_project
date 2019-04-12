@@ -1,6 +1,30 @@
-<span
+<!-- <span
   class="form-control mr-sm-2"
 >Khaled</span>
 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
   Logout
-</button>
+</button> -->
+
+<ng-container *ngIf="username == 'Guest'">
+  <div class="nav-link dropdown fa fa-user">
+      <a type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false">
+        {{username}}
+      </a>
+      <div class="dropdown-menu">
+        <a  class="dropdown-item" routerLink="/register" >Register</a>
+        <a  class="dropdown-item" routerLink="/login" >Login</a>
+      </div>
+  </div>
+</ng-container>
+<ng-container *ngIf="username !== 'Guest'">
+  <div class="nav-link dropdown fa fa-user">
+      <a type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false">
+        {{username}}
+      </a>
+      <div class="dropdown-menu">
+          <a  class="dropdown-item" (click)="logout()" >Logout</a>
+      </div>
+  </div>
+</ng-container>

@@ -19,9 +19,7 @@ export class CartPageComponent implements OnInit {
 		private cartService:CartService) { }
 
   ngOnInit() {
-		// this.cartService.observable.subscribe(() => this.cartCounter = this.cart.getCartCount());
-		// this.cart_products = this.cart.getCart();
-		
+
 		this.cartService.observable.subscribe(data=> {
 			this.items = this.cartService.items;
 			this.total = this.cartService.getTotalPrice();
@@ -30,23 +28,6 @@ export class CartPageComponent implements OnInit {
     );
   }
 
-
-  // loadCart(): void {
-	// 	this.total = 0;
-	// 	this.items = [];
-  //   let cart = JSON.parse(localStorage.getItem('cart'));
-  //   if(cart){
-  //     for (var i = 0; i < cart.length; i++) {
-  //       let item = JSON.parse(cart[i]);
-  //       this.items.push({
-  //         product: item.product,
-  //         quantity: item.quantity
-  //       });
-  //       this.total += item.product.Price * item.quantity;
-  //     }
-  //   }
-		
-	// }
 
 	remove(id: string): void {
 		this.cartService.remove(id);
